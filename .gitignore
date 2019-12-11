@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+.vscode
+src/styles/css/styles.css.map
+src/styles/.sass-cache/d4803c550eacc42d45681617cdada8ef9f01a000/styles.scssc
+src/styles/.sass-cache/82ed079f7bf1472d94ac34a0c6640ca1e27fd9e7/styles.scssc

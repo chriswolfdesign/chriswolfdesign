@@ -28,6 +28,12 @@ export class TechnologyList extends Component {
             <div style={this.getStyle()}>
                 <OutsideLinkButton text="Visual Studio Code"
                 link="https://code.visualstudio.com"/>
+                <OutsideLinkButton text="GitHub"
+                link="https://www.github.com"/>
+                <OutsideLinkButton text="ReactJS"
+                link="https://reactjs.org"/>
+                <OutsideLinkButton text="Heroku"
+                link="https://www.heroku.com"/>
             </div>
         )
     }

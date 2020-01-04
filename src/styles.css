@@ -1,7 +1,4 @@
 body {
     background-color: black;
-}
-
-.hoverable:hover {
-    backgroundColor: blue;
+    height: 100%
 }

@@ -4,7 +4,7 @@ import "../styles.css";
 export class NavBarButton extends Component {
   state = {
     hovered: false
-  };
+  }
 
   getStyle = () => {
     return {

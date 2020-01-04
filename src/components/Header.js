@@ -14,7 +14,10 @@ export class Header extends Component {
 const headerStyle = {
   backgroundColor: "purple",
   fontSize: "24px",
-  // marginTop: "-25px"
+  position: 'fixed',
+  top: 0,
+  width: "100%",
+  height: "5%"
 };
 
 export default Header;

@@ -4,6 +4,7 @@ import Header from './components/Header';
 import TechnologyList from './components/TechnologyList';
 import Intro from './components/Intro';
 import About from './components/About';
+import Footer from './components/Footer';
 
 /**
  * App.js
@@ -21,6 +22,7 @@ function App() {
       <TechnologyList />
       <Intro />
       <About />
+      <Footer />
     </div>
   );
 }

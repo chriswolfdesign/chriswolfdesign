@@ -39,7 +39,8 @@ const headerStyle = {
   position: 'fixed',
   top: 0,
   width: "100%",
-  height: "5%"
+  height: "5%",
+  paddingLeft: '2vh'
 };
 
 export default Header;

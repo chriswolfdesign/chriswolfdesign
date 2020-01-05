@@ -2,15 +2,16 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 
 /**
- * OutsideLinkButton.js
+ * LinkButton.js
  * 
- * Component responsible for buttons that lead us to outside of our application
+ * Component responsible for buttons that will lead us to somewhere, inside or
+ * outside of our application
  * 
  * @author Chris Wolf
  * @version 1.0.0 (January 5, 2020)
  */
 
-export class OutsideLinkButton extends Component {
+export class LinkButton extends Component {
 
   // the state of our OutsideLinkButton
   state = {
@@ -54,9 +55,9 @@ export class OutsideLinkButton extends Component {
 }
 
 // defines the types that each of our properties must be
-OutsideLinkButton.propTypes = {
+LinkButton.propTypes = {
   text: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired
 };
 
-export default OutsideLinkButton;
+export default LinkButton;

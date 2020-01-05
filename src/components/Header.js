@@ -26,7 +26,8 @@ export class Header extends Component {
   render() {
     return (
       <div style={headerStyle}>
-        <NavBarButton text={"Technology"} function={this.toggleTechnologyVisibility}/>
+        <NavBarButton text={"Technologies"} 
+        function={this.toggleTechnologyVisibility}/>
       </div>
     );
   }

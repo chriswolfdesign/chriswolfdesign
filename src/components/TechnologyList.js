@@ -1,5 +1,5 @@
 import React from "react";
-import OutsideLinkButton from "./OutsideLinkButton";
+import LinkButton from "./LinkButton";
 
 /**
  * TechnologyList.js
@@ -14,13 +14,13 @@ import OutsideLinkButton from "./OutsideLinkButton";
 function TechnologyList() {
   return (
     <div id="technologyList" style={technologyListStyle}>
-      <OutsideLinkButton
+      <LinkButton
         text="Visual Studio Code"
         link="https://code.visualstudio.com"
       />
-      <OutsideLinkButton text="GitHub" link="https://www.github.com" />
-      <OutsideLinkButton text="ReactJS" link="https://reactjs.org" />
-      <OutsideLinkButton text="Heroku" link="https://www.heroku.com" />
+      <LinkButton text="GitHub" link="https://www.github.com" />
+      <LinkButton text="ReactJS" link="https://reactjs.org" />
+      <LinkButton text="Heroku" link="https://www.heroku.com" />
     </div>
   );
 }

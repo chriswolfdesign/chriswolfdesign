@@ -1,4 +1,5 @@
 import React from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 import './styles.css';
 import Header from './components/Header';
 import TechnologyList from './components/TechnologyList';
@@ -20,9 +21,15 @@ function App() {
     <div style={appStyle}>
       <Header />
       <TechnologyList />
-      <Intro />
-      <About />
-      <Footer />
+      <Router>
+        <Route exact path="/" render={props => (
+          <React.Fragment>
+            <Intro />
+            <About />
+          </React.Fragment>
+        )} />
+        <Footer />
+      </Router>
     </div>
   );
 }

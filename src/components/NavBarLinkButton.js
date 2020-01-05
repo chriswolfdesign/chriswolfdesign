@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import {BrowserRouter as Router, Link} from 'react-router-dom';
 
 /**
  * NavBarLinkButton.js
@@ -41,25 +40,22 @@ export class NavBarLinkButton extends Component {
     });
   }
   
+  onClick = () => {
+    window.location.assign(this.props.link);
+  }
+
   // generates the JSX for this NavBarLinkButton
   render() {
     return (
       <div
       style={this.getStyle()}
       onMouseEnter={this.toggleHover}
-      onMouseLeave={this.toggleHover}>
-        <Router>
-          <Link style={linkStyle} to={this.props.link}> {this.props.text}</Link>
-        </Router>
+      onMouseLeave={this.toggleHover}
+      onClick={this.onClick}>
+        {this.props.text}
       </div>
     )
   }
-}
-
-// the style for the embedded links
-const linkStyle = {
-  color: 'white',
-  textDecoration: 'none'
 }
 
 export default NavBarLinkButton

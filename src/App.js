@@ -6,6 +6,7 @@ import TechnologyList from './components/TechnologyList';
 import Intro from './components/Intro';
 import About from './components/About';
 import Footer from './components/Footer';
+import Resume from './components/Resume'
 
 /**
  * App.js
@@ -34,8 +35,13 @@ function App() {
             <About />
           </React.Fragment>
         )} />
-        <Footer />
+        <Route path="/resume" render={props => (
+          <React.Fragment>
+            <Resume />
+          </React.Fragment>
+        )} />
       </Router>
+      <Footer />
     </div>
   );
 }

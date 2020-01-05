@@ -30,6 +30,7 @@ export class Header extends Component {
         <NavBarButton text={"Technologies"} 
         function={this.toggleTechnologyVisibility}/>
         <NavBarLinkButton text="Home" link="/home" />
+        <NavBarLinkButton text="Resume" link={"/resume"} />
       </div>
     );
   }

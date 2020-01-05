@@ -2,10 +2,20 @@ import React, { Component } from "react";
 import NavBarButton from "./NavBarButton";
 
 export class Header extends Component {
+
+  toggleTechnologyVisibility = () => {
+    let div = document.getElementById('technologyList');
+    if (div.style.display === 'block') {
+      div.style.display = 'none';
+    } else {
+      div.style.display = 'block';
+    }
+  }
+
   render() {
     return (
       <div style={headerStyle}>
-        <NavBarButton text={"Technology"} />
+        <NavBarButton text={"Technology"} function={this.toggleTechnologyVisibility}/>
       </div>
     );
   }

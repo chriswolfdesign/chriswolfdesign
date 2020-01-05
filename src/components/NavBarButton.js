@@ -9,11 +9,13 @@ export class NavBarButton extends Component {
   getStyle = () => {
     return {
       cursor: "pointer",
-      fontSize: "24px",
+      fontSize: "3.5vh",
       backgroundColor: this.state.hovered ? "blue" : "purple",
       display: "inline-block",
-      padding: "5px",
-      margin: "0px"
+      // padding: "0.4%",
+      paddingBottm: '-0.1%',
+      margin: "0px",
+      height: '100%'
     };
   };
 
@@ -23,16 +25,12 @@ export class NavBarButton extends Component {
     });
   };
 
-  navBarButtonClicked= () => {
-    console.log(this.props.text + ' has been clicked!');
-  }
-
   render() {
     return (
       <div
         onMouseEnter={this.toggleHover}
         onMouseLeave={this.toggleHover}
-        onClick={this.navBarButtonClicked}
+        onClick={this.props.function}
         style={this.getStyle()}
       >
         {this.props.text}

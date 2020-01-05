@@ -33,7 +33,7 @@ const introStyle = {
 
 // style for the text of the entire intro
 const introTextStyle = {
-  color: '#39FF33',
+  color: '#04DCD5',
   width: '100%',
   textAlign: 'center',
   paddingTop: '20%'

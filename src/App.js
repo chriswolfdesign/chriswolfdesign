@@ -2,6 +2,7 @@ import React from 'react';
 import './styles.css';
 import Header from './components/Header';
 import TechnologyList from './components/TechnologyList';
+import Intro from './components/Intro';
 
 /**
  * App.js
@@ -17,6 +18,7 @@ function App() {
     <div style={appStyle}>
       <Header />
       <TechnologyList />
+      <Intro />
     </div>
   );
 }

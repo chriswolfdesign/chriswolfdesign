@@ -20,10 +20,10 @@ export class NavBarButton extends Component {
   getStyle = () => {
     return {
       cursor: "pointer",
-      fontSize: "3.5vh",
+      fontSize: "2vw",
       backgroundColor: this.state.hovered ? "blue" : "purple",
       display: "inline-block",
-      paddingBottm: '-0.1%',
+      paddingBottom: '0',
       margin: "0px",
       height: '100%'
     };

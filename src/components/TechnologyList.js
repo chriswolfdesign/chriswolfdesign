@@ -31,9 +31,12 @@ const technologyListStyle = {
   color: "white",
   marginTop: "2.8%",
   width: "10%",
-  height: "100vh",
+  height: "150vh",
   position: "fixed",
-  left: 0
+  fontSize: '2vw',
+  top: 0,
+  left: 0,
+  display: 'none'
 };
 
 export default TechnologyList;

@@ -54,12 +54,15 @@ function About() {
   )
 }
 
+// the background color "scheme" of this component
 const backgroundColorTheme = '#891A1A'
 
+// style for the entire About component
 const aboutStyle = {
   height: '95vh'
 }
 
+// style for the picture side of the component
 const pictureHalfStyle = {
   height: '100%',
   width: '50%',
@@ -67,6 +70,7 @@ const pictureHalfStyle = {
   textAlign: 'center',
 }
 
+// style for the biography side of the component
 const biographyHalfStyle = {
   backgroundColor: backgroundColorTheme,
   height: '100%',
@@ -74,6 +78,7 @@ const biographyHalfStyle = {
   float: 'right'
 }
 
+// style for the image
 const imageStyle = {
   borderRadius: '50%',
   width: '45vh',
@@ -81,6 +86,7 @@ const imageStyle = {
   border: '10px solid ' + backgroundColorTheme
 }
 
+// style for the header of the about biography
 const aboutHeader = {
   textAlign: 'center',
   marginTop: '2vh',
@@ -89,6 +95,7 @@ const aboutHeader = {
   fontFamily: 'Lobster-Two, cursive'
 }
 
+// style for the contents of the about biography
 const aboutContents = {
   fontSize: '2vh',
   paddingLeft: '5vh',

@@ -3,6 +3,7 @@ import './styles.css';
 import Header from './components/Header';
 import TechnologyList from './components/TechnologyList';
 import Intro from './components/Intro';
+import About from './components/About';
 
 /**
  * App.js
@@ -19,6 +20,7 @@ function App() {
       <Header />
       <TechnologyList />
       <Intro />
+      <About />
     </div>
   );
 }

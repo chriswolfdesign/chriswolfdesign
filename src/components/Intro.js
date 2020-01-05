@@ -7,7 +7,7 @@ import background from '../images/CodeImage.png';
  * Component responsible for the introduction of our application
  * 
  * @author Chris Wolf
- * @version 1.0.0 (January 5, 2019)
+ * @version 1.0.0 (January 5, 2020)
  */
 
 function Intro() {

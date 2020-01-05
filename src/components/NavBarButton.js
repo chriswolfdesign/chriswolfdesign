@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "../styles.css";
+import PropTypes from 'prop-types';
 
 export class NavBarButton extends Component {
   state = {
@@ -36,6 +36,11 @@ export class NavBarButton extends Component {
       </div>
     );
   }
+}
+
+NavBarButton.propTypes = {
+  text: PropTypes.string.isRequired,
+  function: PropTypes.func.isRequired
 }
 
 export default NavBarButton;

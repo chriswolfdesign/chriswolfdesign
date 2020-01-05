@@ -28,6 +28,12 @@ function App() {
             <About />
           </React.Fragment>
         )} />
+        <Route path="/home" render={props => (
+          <React.Fragment>
+            <Intro />
+            <About />
+          </React.Fragment>
+        )} />
         <Footer />
       </Router>
     </div>

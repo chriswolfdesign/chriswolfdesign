@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import NavBarButton from "./NavBarButton";
+import NavBarLinkButton from './NavBarLinkButton';
 
 /**
  * Header.js
@@ -28,6 +29,7 @@ export class Header extends Component {
       <div style={headerStyle}>
         <NavBarButton text={"Technologies"} 
         function={this.toggleTechnologyVisibility}/>
+        <NavBarLinkButton text="Home" link="/home" />
       </div>
     );
   }
@@ -41,7 +43,7 @@ const headerStyle = {
   top: 0,
   width: "100%",
   height: "5%",
-  paddingLeft: '2vh'
+  display: 'flex'
 };
 
 export default Header;

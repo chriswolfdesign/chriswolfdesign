@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import OutsideLinkButton from "./OutsideLinkButton";
 
 /**
@@ -11,22 +11,18 @@ import OutsideLinkButton from "./OutsideLinkButton";
  * @version 1.0.0 (January 5, 2020)
  */
 
-export class TechnologyList extends Component {
-
-  // renders the JSX for our TechnologyList
-  render() {
-    return (
-      <div id="technologyList" style={technologyListStyle}>
-        <OutsideLinkButton
-          text="Visual Studio Code"
-          link="https://code.visualstudio.com"
-        />
-        <OutsideLinkButton text="GitHub" link="https://www.github.com" />
-        <OutsideLinkButton text="ReactJS" link="https://reactjs.org" />
-        <OutsideLinkButton text="Heroku" link="https://www.heroku.com" />
-      </div>
-    );
-  }
+function TechnologyList() {
+  return (
+    <div id="technologyList" style={technologyListStyle}>
+      <OutsideLinkButton
+        text="Visual Studio Code"
+        link="https://code.visualstudio.com"
+      />
+      <OutsideLinkButton text="GitHub" link="https://www.github.com" />
+      <OutsideLinkButton text="ReactJS" link="https://reactjs.org" />
+      <OutsideLinkButton text="Heroku" link="https://www.heroku.com" />
+    </div>
+  );
 }
 
 // style for our TechnologyList

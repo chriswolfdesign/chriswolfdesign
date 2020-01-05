@@ -1,7 +1,19 @@
 import React, { Component } from "react";
 import OutsideLinkButton from "./OutsideLinkButton";
 
+/**
+ * TechnologyList.js
+ * 
+ * Component responsible for generating the technology list on the side of the
+ * page
+ * 
+ * @author Chris Wolf
+ * @version 1.0.0 (January 5, 2020)
+ */
+
 export class TechnologyList extends Component {
+
+  // renders the JSX for our TechnologyList
   render() {
     return (
       <div id="technologyList" style={technologyListStyle}>
@@ -17,6 +29,7 @@ export class TechnologyList extends Component {
   }
 }
 
+// style for our TechnologyList
 const technologyListStyle = {
   backgroundColor: "purple",
   color: "white",

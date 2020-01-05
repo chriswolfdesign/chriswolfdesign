@@ -3,6 +3,15 @@ import './styles.css';
 import Header from './components/Header';
 import TechnologyList from './components/TechnologyList';
 
+/**
+ * App.js
+ * 
+ * The entry point to our application
+ * 
+ * @author Chris Wolf
+ * @version 1.0.0 (January 5, 2020)
+ */
+
 function App() {
   return (
     <div style={appStyle}>
@@ -12,6 +21,7 @@ function App() {
   );
 }
 
+// style for our App
 const appStyle = {
   color: 'white'
 }

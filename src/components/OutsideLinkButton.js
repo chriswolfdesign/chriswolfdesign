@@ -1,11 +1,23 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 
+/**
+ * OutsideLinkButton.js
+ * 
+ * Component responsible for buttons that lead us to outside of our application
+ * 
+ * @author Chris Wolf
+ * @version 1.0.0 (January 5, 2020)
+ */
+
 export class OutsideLinkButton extends Component {
+
+  // the state of our OutsideLinkButton
   state = {
     hovered: false
   };
 
+  // generates the style for our OutsideLinkButton based on its state
   getStyle = () => {
     return {
       cursor: "pointer",
@@ -18,12 +30,14 @@ export class OutsideLinkButton extends Component {
     };
   };
 
+  // toggles whether or not our OutsideLinkButton is being hovered over
   toggleHover = () => {
     this.setState({
       hovered: !this.state.hovered
     });
   };
 
+  // renders the JSX for our OutsideLinkButton
   render() {
     return (
       <div
@@ -39,6 +53,7 @@ export class OutsideLinkButton extends Component {
   }
 }
 
+// defines the types that each of our properties must be
 OutsideLinkButton.propTypes = {
   text: PropTypes.string.isRequired,
   link: PropTypes.string.isRequired

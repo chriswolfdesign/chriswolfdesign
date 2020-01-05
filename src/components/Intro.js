@@ -5,6 +5,9 @@ import background from '../images/CodeImage.png';
  * Intro.js
  * 
  * Component responsible for the introduction of our application
+ * 
+ * @author Chris Wolf
+ * @version 1.0.0 (January 5, 2019)
  */
 
 function Intro() {

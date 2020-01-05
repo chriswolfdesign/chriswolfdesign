@@ -2,27 +2,6 @@ import React, {Component} from 'react';
 import OutsideLinkButton from './OutsideLinkButton';
 
 export class TechnologyList extends Component {
-    // state = {
-    //     visibility: 'visible'
-    // }
-
-    // getStyle= () => {
-    //     return {
-    //         backgroundColor : 'purple',
-    //         color: 'white',
-    //         marginTop: '2.8%',
-    //         width: '10%',
-    //         height: '100vh',
-    //         visibility: true
-    //     }
-    // }
-
-    // toggleVisibility = () => {
-    //     this.setState({
-    //         visibility: this.state.visibility === 'visible' ? 'hidden' : 'visible'
-    //     });
-    // }
-
     render() {
         return (
             <div id="technologyList"
@@ -48,7 +27,6 @@ const technologyListStyle = {
     height: '100vh',
     position: 'fixed',
     left: 0
-    // visibility: true
 }
 
 export default TechnologyList

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { findRenderedComponentWithType } from 'react-dom/test-utils';
 
 export class OutsideLinkButton extends Component {
     state = {
@@ -31,7 +30,6 @@ export class OutsideLinkButton extends Component {
             onMouseEnter={this.toggleHover}
             onMouseLeave={this.toggleHover}>
                 <a style={this.getStyle()}
-                target="_blank" 
                 href={this.props.link}>{this.props.text}</a>
             </div>
         )

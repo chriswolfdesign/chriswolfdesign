@@ -12,7 +12,6 @@ export class NavBarButton extends Component {
       fontSize: "3.5vh",
       backgroundColor: this.state.hovered ? "blue" : "purple",
       display: "inline-block",
-      // padding: "0.4%",
       paddingBottm: '-0.1%',
       margin: "0px",
       height: '100%'

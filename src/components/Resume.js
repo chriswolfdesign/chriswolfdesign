@@ -14,7 +14,7 @@ function Resume() {
     <div style={resumeStyle}>
       <div>
         If you would prefer to view the PDF of this resume,
-        please <a style={linkStyle} href="https://drive.google.com/file/d/1ifb4YxiWTKB22fn6m_NpdwNgEdFN2Ywo/view?usp=sharing">click here.</a>
+        please <a style={linkStyle} href="https://drive.google.com/file/d/1McZOkMrNx_BpwTPsfUVbKvP5_bWYTSwt/view?usp=sharing">click here.</a>
       </div>
       <div style={resumeHeader}>
         Resume for Christopher R. Wolf

@@ -6,7 +6,8 @@ import TechnologyList from './components/TechnologyList';
 import Intro from './components/Intro';
 import About from './components/About';
 import Footer from './components/Footer';
-import Resume from './components/Resume'
+import Resume from './components/Resume';
+import Contact from './components/Contact';
 
 /**
  * App.js
@@ -38,6 +39,11 @@ function App() {
         <Route path="/resume" render={props => (
           <React.Fragment>
             <Resume />
+          </React.Fragment>
+        )} />
+        <Route path="/contact" render={props => (
+          <React.Fragment>
+            <Contact />
           </React.Fragment>
         )} />
       </Router>

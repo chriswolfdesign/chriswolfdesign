@@ -31,6 +31,7 @@ export class Header extends Component {
         function={this.toggleTechnologyVisibility}/>
         <NavBarLinkButton text="Home" link="/home" />
         <NavBarLinkButton text="Resume" link={"/resume"} />
+        <NavBarLinkButton text="Contact Me" link={"/contact"} />
       </div>
     );
   }

@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import emailjs from 'emailjs-com';
 
 /**
  * Contact.js
@@ -52,7 +53,18 @@ export class Contact extends Component {
     if (this.state.name !== '' && this.state.emailAddress !== '' &&
         this.state.message !== '') {
           console.log(this.state);
-          window.location.assign('/messageReceived');
+          emailjs.send('chriswolfdesignmailerdaemon', 'template_0wNjDSx6',
+          this.state, 'user_nUAEVSIBHsACjsHQJfUwh').then(function(response) {
+            console.log('SUCCESS', response.status, response.text);
+            window.location.assign('/messageReceived');
+          }, function(error) {
+            console.log('Failed', error);
+            // eslint-disable-line prefer-template
+            alert(`I apologize, the email could not be sent. 
+             I am only allowed 200 free emails through this service monthly\n
+            Please contact me through my email at the bottom of the page.\n
+            I apologize for any inconvenience.`);
+          });
     } else {
       alert('Please enter your name, email address, and message to send.');
     }
@@ -61,7 +73,7 @@ export class Contact extends Component {
   // generates the JSX for this component
   render() {
     return (
-      <div className="form-group" style={contactStyle}>
+      <div id="contactForm" className="form-group" style={contactStyle}>
         <form>
           <label htmlFor="name">Name: required</label>
           <input style={inputStyle} type="text" onChange={this.handleChangeName} className="form-control" id="name" value={this.state.name}></input>

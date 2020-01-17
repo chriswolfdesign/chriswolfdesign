@@ -74,7 +74,7 @@ const pictureHalfStyle = {
 // style for the biography side of the component
 const biographyHalfStyle = {
   backgroundColor: backgroundColorTheme,
-  height: '100vh',
+  minHeight: '100vh',
   width: '50%',
   float: 'right'
 }

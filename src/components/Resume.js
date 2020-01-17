@@ -20,7 +20,7 @@ function Resume() {
         Resume for Christopher R. Wolf
       </div>
       <div style={contactInfoStyle}>
-        (919)770-2878<br></br
+        (919)770-2878<br></br>
         chriswolfdesign@gmail.com
       </div>
       <div style={resumeContent}>

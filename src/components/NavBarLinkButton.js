@@ -21,7 +21,8 @@ export class NavBarLinkButton extends Component {
   getStyle = () => {
     return {
       cursor: "pointer",
-      fontSize: "2vw",
+      fontSize: "3vh",
+      bottom: '0',
       backgroundColor: this.state.hovered ? "blue" : "purple",
       display: "inline-block",
       paddingBottom: '0',

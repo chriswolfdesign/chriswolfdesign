@@ -26,7 +26,8 @@ const footerStyle = {
   paddingTop: '1vh',
   paddingLeft: '1vh',
   paddingBottom: '1vh',
-  lineHeight: '2.5vh'
+  lineHeight: '2.5vh',
+  fontSize: '2vh'
 }
 
 // the style for the links embedded into the footer

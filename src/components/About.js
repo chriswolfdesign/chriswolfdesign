@@ -59,7 +59,8 @@ const backgroundColorTheme = '#891A1A'
 
 // style for the entire About component
 const aboutStyle = {
-  height: '95vh'
+  minHeight: '100vh',
+  overflow: 'auto'
 }
 
 // style for the picture side of the component
@@ -73,7 +74,7 @@ const pictureHalfStyle = {
 // style for the biography side of the component
 const biographyHalfStyle = {
   backgroundColor: backgroundColorTheme,
-  height: '100%',
+  height: '100vh',
   width: '50%',
   float: 'right'
 }
@@ -81,9 +82,10 @@ const biographyHalfStyle = {
 // style for the image
 const imageStyle = {
   borderRadius: '50%',
-  width: '45vh',
-  marginTop: '25vh',
-  border: '10px solid ' + backgroundColorTheme
+  width: '50%',
+  height: 'auto',
+  marginTop: '20%',
+  border: '6px solid ' + backgroundColorTheme
 }
 
 // style for the header of the about biography

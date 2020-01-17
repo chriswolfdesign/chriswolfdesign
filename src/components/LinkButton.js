@@ -22,8 +22,8 @@ export class LinkButton extends Component {
   getStyle = () => {
     return {
       cursor: "pointer",
-      padding: "10px",
-      fontSize: "16px",
+      marginBottom: "10px",
+      fontSize: "2vh",
       backgroundColor: this.state.hovered ? "blue" : "purple",
       color: "white",
       textDecoration: "none",

@@ -28,7 +28,7 @@ function Intro() {
 // style for the entire intro
 const introStyle = {
   marginTop: '3%',
-  height: '94vh',
+  height: '95vh',
   background: `url(${background})`,
   backgroundRepeat: 'no-repeat',
   backgroundSize: '100% 100%',

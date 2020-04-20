@@ -34,6 +34,6 @@ const messageReceivedStyle = {
   paddingLeft: '3vh',
   paddingRight: '3vh',
   textAlign: 'center'
-}
+};
 
 export default MessageReceived;
